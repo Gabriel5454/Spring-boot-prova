@@ -1,0 +1,132 @@
+type: collection.insomnia.rest/5.0
+name: SpringBoot
+meta:
+  id: wrk_546d87c6ae604fee990a0f47141ec547
+  created: 1742426345598
+  modified: 1743201658190
+collection:
+  - url: localhost:8080/api/v1/alunos/inserir
+    name: aluno/inserir
+    meta:
+      id: req_f873320aeef84bc7a349fde648491046
+      created: 1743201662487
+      modified: 1743210849791
+      isPrivate: false
+      sortKey: -1743201663782.9375
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        "nome" : "Gabriel",
+        "idade" : 15,
+        "cpf" : "76073897090",
+        "curso": "Matemática"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8080/api/v1/pessoa/listar
+    name: pessoa/listar
+    meta:
+      id: req_ce98d4b237f04f87a154521d63c708e2
+      created: 1743201664082
+      modified: 1743203005814
+      isPrivate: false
+      sortKey: -1743201664082
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8080/api/v1/professor/inserir
+    name: professor/inserir
+    meta:
+      id: req_dfd4fd1295134d59a2e57fa7083ed2c0
+      created: 1743202929464
+      modified: 1743208865632
+      isPrivate: false
+      sortKey: -1743201663882.625
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        "nome" : "Kaka",
+        "idade" : 18,
+        "cpf" : "24100054890",
+        "diciplina" : "Matematica"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:8080/api/v1/pessoa/alterar
+    name: pessoa/alterar
+    meta:
+      id: req_4320e33fdbc14687849022e8dabcd36b
+      created: 1743204777313
+      modified: 1743207778893
+      isPrivate: false
+      sortKey: -1743201663683.25
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        
+        {
+            "nomeAntigo": "Kaka",
+            "novoNome": "Carlos"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/11.0.1
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_9302afbd3452e6ed4898903e3de817f84aa35593
+    created: 1743201658461
+    modified: 1743201658461
+environments:
+  name: Base Environment
+  meta:
+    id: env_9302afbd3452e6ed4898903e3de817f84aa35593
+    created: 1742426345601
+    modified: 1743201658189
+    isPrivate: false
